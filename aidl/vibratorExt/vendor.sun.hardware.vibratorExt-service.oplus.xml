@@ -1,0 +1,10 @@
+<!--
+     SPDX-FileCopyrightText: The SunOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<manifest version="1.0" type="device">
+    <hal format="aidl">
+        <name>vendor.sun.hardware.vibratorExt</name>
+        <fqname>IVibratorExt/default</fqname>
+    </hal>
+</manifest>

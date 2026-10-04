@@ -1,0 +1,7 @@
+allow hal_vibrator_ext_default input_device:dir r_dir_perms;
+allow hal_vibrator_ext_default input_device:chr_file rw_file_perms;
+
+allow hal_vibrator_ext_default vendor_file:dir r_dir_perms;
+allow hal_vibrator_ext_default vendor_file:file r_file_perms;
+
+get_prop(hal_vibrator_ext_default, vendor_vibrator_device_prop)
