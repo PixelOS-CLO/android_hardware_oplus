@@ -16,6 +16,9 @@ type vendor_proc_wireless, fs_type, proc_type;
 # Display
 type vendor_proc_display, fs_type, proc_type;
 
+# Dolby Atmos
+type vendor_dolby_data_file, file_type, data_file_type;
+
 # Engineering
 type vendor_proc_engineer, fs_type, proc_type;
 

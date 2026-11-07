@@ -23,6 +23,9 @@ type hal_oplus_displaypanel_aidl_service, hal_service_type, service_manager_type
 type hal_display_iris_aidl_service, hal_service_type, service_manager_type;
 type hal_feature_iris_aidl_service, hal_service_type, service_manager_type;
 
+# Dolby Atmos
+type hal_dolby_dms_service, hal_service_type, service_manager_type;
+
 # Dolby Vision
 type hal_dolby_dvs_aidl_service, hal_service_type, service_manager_type;
 

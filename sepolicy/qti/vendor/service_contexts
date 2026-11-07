@@ -26,6 +26,9 @@ vendor.oplus.hardware.displaypanelfeature.IDisplayPanelFeature/default   u:objec
 vendor.pixelworks.hardware.display.IIris/default           u:object_r:hal_display_iris_aidl_service:s0
 vendor.pixelworks.hardware.feature.IIrisFeature/default    u:object_r:hal_feature_iris_aidl_service:s0
 
+# Dolby Atmos
+vendor.dolby.dms.IDms/default    u:object_r:hal_dolby_dms_service:s0
+
 # Dolby Vision
 vendor.dolby.dvs.IDvs/default    u:object_r:hal_dolby_dvs_aidl_service:s0
 
