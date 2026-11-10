@@ -1,0 +1,27 @@
+//
+// SPDX-FileCopyrightText: The PixelOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_binary {
+    name: "vendor.aac.hardware.richtap.vibrator-service.oplus-livetap",
+    vendor: true,
+    relative_install_path: "hw",
+    init_rc: ["vendor.aac.hardware.richtap.vibrator-service.oplus-livetap.rc"],
+    vintf_fragments: ["vendor.aac.hardware.richtap.vibrator-service.oplus-livetap.xml"],
+    cflags: [
+        "-Wall",
+        "-Werror",
+        "-DLOG_TAG=\"vendor.aac.hardware.richtap.vibrator-service.oplus-livetap\"",
+    ],
+    srcs: [
+        "RichtapVibrator.cpp",
+        "service.cpp",
+    ],
+    shared_libs: [
+        "libbase",
+        "libbinder_ndk",
+        "libdl",
+        "vendor.aac.hardware.richtap.vibrator-V2-ndk",
+    ],
+}

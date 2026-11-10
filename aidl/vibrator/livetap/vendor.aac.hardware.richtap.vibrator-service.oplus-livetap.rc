@@ -1,0 +1,8 @@
+on boot
+    chown system system /dev/awinic_haptic
+    chmod 0600 /dev/awinic_haptic
+
+service vendor.richtap.vibrator /vendor/bin/hw/vendor.aac.hardware.richtap.vibrator-service.oplus-livetap
+    class hal
+    user system
+    group system input
