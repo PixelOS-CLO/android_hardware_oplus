@@ -8,6 +8,14 @@
         </interface>
     </hal>
     <hal format="aidl" optional="true">
+        <name>vendor.aac.hardware.richtap.vibrator</name>
+        <version>2</version>
+        <interface>
+            <name>IRichtapVibrator</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
         <name>vendor.dolby.dvs</name>
         <version>1</version>
         <interface>

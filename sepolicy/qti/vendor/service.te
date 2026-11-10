@@ -73,3 +73,6 @@ type hal_oplus_touch_aidl_service, hal_service_type, service_manager_type;
 
 # URCC
 type hal_oplus_urcc_aidl_service, hal_service_type, service_manager_type;
+
+# RichTap
+type hal_richtap_vibrator_service, hal_service_type, service_manager_type;

@@ -1,0 +1,16 @@
+type hal_richtap_vibrator_default, domain;
+hal_server_domain(hal_richtap_vibrator_default, vendor_hal_richtap_vibrator)
+
+type hal_richtap_vibrator_default_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(hal_richtap_vibrator_default)
+
+binder_use(hal_richtap_vibrator_default)
+add_service(hal_richtap_vibrator_default, hal_richtap_vibrator_service)
+
+binder_call(vendor_hal_richtap_vibrator_client, vendor_hal_richtap_vibrator_server)
+binder_call(vendor_hal_richtap_vibrator_server, vendor_hal_richtap_vibrator_client)
+
+allow vendor_hal_richtap_vibrator_client hal_richtap_vibrator_service:service_manager find;
+
+# The livetap haptics core plays through a buffer mapped from the haptics device.
+allow hal_richtap_vibrator_default aac_richtap_device:chr_file { rw_file_perms map };
